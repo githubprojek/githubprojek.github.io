@@ -1,4 +1,4 @@
-section{
+.section{
     padding-top: 5rem;
 }
 
@@ -10,4 +10,12 @@ section{
 
 #projects{
     background-color: #fac561;
+}
+
+.galery-img{
+    width: 100%;
+}
+
+#galery .row > * {
+    padding: 0;
 }
