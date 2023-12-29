@@ -1,21 +1,110 @@
-.section{
-    padding-top: 5rem;
+.section {
+  padding-top: 5rem;
 }
 
 .jumbotron {
-    padding-top: 5rem;
-    background-color: #fac561;
+  padding-top: 5rem;
+  background-color: #f8cd7e;
 }
 
-
-#projects{
-    background-color: #fac561;
+#projects {
+  background-color: #f8cd7e;
 }
 
-.galery-img{
-    width: 100%;
+.galery-img {
+  width: 100%;
 }
 
 #galery .row > * {
-    padding: 0;
+  padding: 0;
+}
+
+/* animasi 3d pake tilt js */
+.coding-box {
+  position: relative;
+  background-color: #fac561;
+  border-radius: 10px;
+  height: 500px;
+  transform-style: preserve-3d;
+}
+
+.coding-box::before {
+  content: "MY";
+  position: absolute;
+  font-size: 6em;
+  color: #fff;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+.coding-box:hover::before {
+  
+  opacity: 0.2;
+}
+
+.coding-box::after {
+  content: "CODING";
+  position: absolute;
+  font-size: 4.5em;
+  color: #fff;
+  font-weight: bold;
+  font-style: italic;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.coding-box:hover::after {
+
+  opacity: 0.2;
+}
+
+.coding-name{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 2em;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translate3d(0,0,50px);
+}
+
+.coding-box:hover .coding-name{
+    top: 20px;
+    opacity: 1;
+}
+
+.show-detail-coding{
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+}
+
+.coding-box:hover .show-detail-coding {
+  bottom: 15px;
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.coding-img{
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate3d(-50%, -55%, 80px);
+  max-width: 1000px;
+  transition: 0.5s;
+}
+
+.coding-box:hover .coding-img{
+  transform: translate(-50%, -55%, 80px) scale(1.2) rotate(2deg);
 }
