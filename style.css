@@ -1,5 +1,5 @@
-.section {
-  padding-top: 5rem;
+section {
+  padding-top: 6rem;
 }
 
 .jumbotron {
@@ -42,7 +42,6 @@
   transition: 0.5s;
 }
 .coding-box:hover::before {
-  
   opacity: 0.2;
 }
 
@@ -61,28 +60,27 @@
 }
 
 .coding-box:hover::after {
-
   opacity: 0.2;
 }
 
-.coding-name{
-    position: absolute;
-    top: 0%;
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    font-size: 2em;
-    opacity: 0;
-    transition: 0.5s;
-    transform: translate3d(0,0,50px);
+.coding-name {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translate3d(0, 0, 50px);
 }
 
-.coding-box:hover .coding-name{
-    top: 20px;
-    opacity: 1;
+.coding-box:hover .coding-name {
+  top: 20px;
+  opacity: 1;
 }
 
-.show-detail-coding{
+.show-detail-coding {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -96,7 +94,7 @@
   transition: 0.5s;
 }
 
-.coding-img{
+.coding-img {
   position: absolute;
   top: 55%;
   left: 50%;
@@ -105,6 +103,6 @@
   transition: 0.5s;
 }
 
-.coding-box:hover .coding-img{
+.coding-box:hover .coding-img {
   transform: translate(-50%, -55%, 80px) scale(1.2) rotate(2deg);
 }
